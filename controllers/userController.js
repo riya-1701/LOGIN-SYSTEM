@@ -15,11 +15,13 @@ const userLogin = (req, res) => {
 
   //Find user by email: ? is a placeholder which is later replaced by email in db.query
   const query = `Select* from users where email = ?`;
-  db.query(query, [email], async (error, res) => {
+  db.query(query, [email], async (err, results) => {
     if (err) {
+      console.error("DB ERROR:", err);
       return res.status(500).json({ message: "Database error" });
     }
     if (results.length === 0) {
+      console.log("User Not Found");
       return res.status(401).json({ message: "Invalid email or password" });
     }
     // Results is an array that contains rows returned from the SQL query.
@@ -27,10 +29,13 @@ const userLogin = (req, res) => {
     // We write results[0] to get the first row — because there should be only one user per email.
 
     const user = results[0];
+    console.log("Found User:", user);
 
     // Compare hashed password (use bcrypt.compare if password is hashed)
 
     const isMatch = await bcrypt.compare(password, user.password);
+    console.log("Password Match:", isMatch);
+
     if (!isMatch) {
       return res.status(401).json({ meassage: "Invalid email or password" });
     }
