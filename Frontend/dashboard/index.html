@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Styling Slick CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jquery CDN FOR SLICK  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top-head">
+            <div class="wrapper">
+                <div class="alltopHead">
+                    <div class="div-setbetween">
+                        <div class="hamburger"><i class="fa fa-bars"></i></div>
+                        <ul>
+                            <li><a href="">
+                                    <div class="top-icon"><i class="fa fa-home icon-gap"></i></div>
+                                    <div class="text-hide">Home</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="top-icon"><i class="fa fa-group icon-gap"></i></div>
+                                    <div class="text-hide">About Us</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="top-icon">
+                                        <i class="fa fa-envelope icon-gap"></i>
+                                    </div>
+                                    <div class="text-hide">Contact</div>
+                                </a>
+                            </li>
+                            <li><a href="">
+                                    <div class="top-icon"><i class="fa fa-question-circle icon-gap"></i></div>
+                                    <div class="text-hide">FAQ</div>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="div-setbetween">
+                        <ul>
+                            <li><i class="fa fa-flag icon-gap"></i>English</li>
+                            <li><i class="fa fa-dollar icon-gap"></i>US Dollar</li>
+                        </ul>
+                    </div>
+                    <div class="div-setbetween">
+                        <ul>
+                            <li>
+                               <a href="">
+                                <div class="top-icon"><i class="fa fa-user icon-gap"></i></div>
+                                <div class="text-hide">More Menus</div>
+                               </a>
+                            <li>
+                               <a href="">
+                                <div class="top-icon"><i class="fa fa-shopping-cart icon-gap"></i></div>
+                                <div class="text-hide">Delivery</div>
+                               </a>
+                            </li>
+                        </ul>
+                        <div class="hamburger"><i class="fa fa-bars"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mid-head">
+            <div class="wrapper">
+                <div class="allmidHead">
+
+                    <div class="div-setbetween">
+                        <h1>JOURNAL</h1>
+                    </div>
+                    <div class=" div-setbetween">
+                        <div class="search-bar">
+                            <span class="bg-primary in-button">ALL<i class="fa fa-sort-down icon-gap"></i></span>
+                            <input type="text" placeholder=" Search here...">
+                            <button class="bg-primary in-button"><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="div-setbetween">
+                        <!-- <div class="hamburger"><i class="fa fa-bars"></i> MENUS</div> -->
+                        <ul>
+                            <li>
+                                <div><i class="fa fa-user-circle"></i></div>
+                                <div class="text-hide">Login</div>
+                            </li>
+                            <li>
+                                <div><i class="fa fa-registered"></i></div>
+                                <div class="text-hide">Register</div>
+                            </li>
+                            <li>
+                                <div><i class="fa fa-heart-o"></i></div>
+                                <div class="text-hide">Wishlist</div>
+                            </li>
+                            <li>
+                                <div><i class="fa fa-life-bouy"></i></div>
+                                <div class="text-hide">Compare</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="div-setbetween">
+                        <div class="zero-item">0 item(s)-$0.00</div>
+                        <div class="bg-primary"><i class="fa fa-shopping-cart"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-head">
+            <div class="wrapper">
+                <div class="allbottomHead">
+                    <div class="div-setbetween">
+                        <div class="bg-secondary">
+                            <span id="department"></span>
+                            <i class="fa fa-bars icon-gap"></i> 
+                           <div class="text-hide"> ALL DEPARTMENTS</div>
+
+                        </div>
+                        <div class="menu-items">
+                            <ul>
+                                <li class="nav-hide">MULTILEVEL</li>
+                                <li class="nav-hide" style="position: relative;">MEGA MENU
+                                    <span id="new"></span>
+                                </li>
+                                <li class="nav-hide">FULLWIDTH</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="div-setbetween">
+                        <div class="menu-items">
+                            <i class="fa fa-phone menu-items"></i>
+                            <div class="text-hide" style="color: white;">1.800.555.6789</div>
+                        </div>
+                        <div class="bg-secondary">
+                            <i class="fa fa-commenting icon-gap"></i>
+                            <div class="text-hide">BLOG</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION  -->
+
+    <section class="hero-section">
+        <div class="wrapper">
+            <div class="carousel-part">
+                <div class="left-carousel hero-slide">
+                    <div class="left-carousel-image"><img src="https://images.pexels.com/photos/316466/pexels-photo-316466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" style="object-position: right;"></div>
+                    <div class="left-carousel-image"><img src="https://images.pexels.com/photos/1109543/pexels-photo-1109543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+                    <div class="left-carousel-image"><img src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></div>
+                  
+                </div>
+                <div class="wrap-text">
+                    <h4>MOBILE</h4>
+                    <p>Best mobile options at any resolution</p>
+                    <button>LEARN MORE</button>
+                </div>
+                
+                <div class="right">
+                    <div class="right-image">
+                        <div class="watch"><img src="./images/pic2.png" alt=""></div>
+                    </div>
+                    <div class="right-image">
+                        <div class="watch"><img src="./images/pic2.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <section class="hero-divider" style=" background-color: rgb(105, 105, 105);">
+        <div class="wrapper">
+            <div class="divider-1">
+                <div class="d1-items">
+                    <div class="d1-logo"><i class="fa fa-truck"></i></div>
+                    <div class="d1-text">
+                        <p><b>Free Shipping</b></p>
+                        <p style="color: rgb(187, 181, 181);">Free delievery over $100</p>
+                    </div>
+                </div>
+                <div class="d1-items">
+                    <div class="d1-logo"><i class="fa fa-mail-reply"></i></div>
+                    <div class="d1-text">
+                        <p><b>Free Returns</b></p>
+                        <p style="color: rgb(187, 181, 181);">Hassle free returns</p>
+                    </div>
+                </div>
+                <div class="d1-items">
+                    <div class="d1-logo"><i class='fa fa-diamond'></i></div>
+                    <div class="d1-text">
+                        <p><b>Secure Shopping</b></p>
+                        <p style="color: rgb(187, 181, 181);">Best security features</p>
+                    </div>
+                </div>
+                <div class="d1-items">
+                    <div class="d1-logo"><i class="fa fa-cube"></i></div>
+                    <div class="d1-text">
+                        <p><b>Unlimited Blocks</b></p>
+                        <p style="color: rgb(187, 181, 181);">Any content, any page</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Third Page -->
+
+    <section>
+        <div class="wrapper">
+            <div class="third-page">
+                <div class="ecom-heading">
+                    <h1>Why buy from us?</h1>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, unde non? Assumenda similique
+                        exercitationem doloremque, quas unde commodi recusandae obcaecati officiis accusantium! <a
+                            href="">Learn More</a></p>
+                </div>
+
+                <div class="items">
+                    <div class="bg-primary categories-items">TOP CATEGORY</div>
+                    <div class="categories-items">ELECTRONICS</div>
+                    <div class="categories-items">BEAUTY</div>
+                    <div class="categories-items">FASHION</div>
+                </div>
+
+                <div class="slick">
+                    <div class="slick-items slider" style="position: relative;">
+                        <div class="one" style="position: relative;"><img src="./images/fashion.jpeg" alt="">
+                            <span class="slick-tag">
+                                <h3>FASHION</h3>
+                            </span>
+                        </div>
+                        <div class="one"><img src="./images/homedecor.jpeg" alt="">
+                            <span class="slick-tag">
+                                <h3>FASHION</h3>
+                            </span>
+                        </div>
+                        <div class="one"><img src="./images/footwear.jpeg" alt="">
+                            <span class="slick-tag">
+                                <h3>FASHION</h3>
+                            </span>
+                        </div>
+                        <div class="one"><img src="./images/bags.jpeg" alt="">
+                            <span class="slick-tag">
+                                <h3>FASHION</h3>
+                            </span>
+                        </div>
+                        <div class="one"><img src="./images/beauty.jpeg" alt="">
+                            <span class="slick-tag">
+                                <h3>FASHION</h3>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fourth Page  -->
+    <section class="bg-navigator">
+        <div class="wrapper">
+            <div class="fourth-page">
+                <div class="ecom-heading">
+                    <h1>Featured Products</h1>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, unde non? Assumenda similique
+                        exercitationem doloremque, quas unde commodi recusandae obcaecati officiis accusantium!</p>
+                </div>
+                <div class="items">
+                    <div class="bg-primary categories-items">FEATURED</div>
+                    <div class="categories-items">LATEST</div>
+                    <div class="categories-items">BESTSELLERS</div>
+                    <div class="categories-items">SPECIALS</div>
+                </div>
+
+                <div class="slick">
+                    <div class="slick-items slider">
+                        <div class="slick-container">
+                            <div class="one">
+                                <span id="labels"></span>
+                                <span id="hot"></span>
+                                <img src="./images/fashion.jpeg" alt="">
+                            </div>
+
+                            <div class="p-name">
+                                <p style="text-decoration: underline;">XYZ</p>
+                                <p>BRAND</p>
+                            </div>
+
+                            <div class="p-price">
+                                <h3>Headphones</h3>
+                                <p>$999.00 <del style="font-size: small;">$3,299.00</del></p>
+                                <div class="cart" style="display: flex;">
+                                    <div class="add">
+                                        <input type="number" placeholder="1">
+                                        <div class="hamburger-cart"><i style="color: white;" class="fa fa-shopping-cart"></i></div>
+                                        <button>ADD TO CART</button>
+                                    </div>
+                                    <div class="wishlist">
+                                        <a href=""><i class="fa fa-heart icon-gap-2"></i></a>
+                                        <a href=""><i class="fa fa-cart-arrow-down"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="p-buy">
+                                <div class="buy-now"><i style="color: green;" class="fa fa-money icon-gap"></i>
+                                    <div class="content-hide">Buy Now</div>
+                                </div>
+                                <div class="ques" style="display: flex; align-items: center;">
+                                    <div class="icon-text"><i style="color: red;"
+                                        class="fa fa-question-circle-o icon-gap"></i></div>
+                                    <div class="content-hide">Question</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="slick-container">
+                            <div class="one">
+                                <span id="labels"></span>
+                                <span id="hot"></span>
+                                <img src="./images/homedecor.jpeg" alt="">
+                            </div>
+
+                            <div class="p-name">
+                                <p style="text-decoration: underline;">XYZ</p>
+                                <p>BRAND</p>
+                            </div>
+
+                            <div class="p-price">
+                                <h3>Headphones</h3>
+                                <p>$999.00 <del style="font-size: small;">$3,299.00</del></p>
+                                <div class="cart" style="display: flex;">
+                                    <div class="add">
+                                        <input type="number" placeholder="1">
+                                        <div class="hamburger-cart"><i style="color: white;" class="fa fa-shopping-cart"></i></div>
+                                        <button>ADD TO CART</button>
+                                    </div>
+                                    <div class="wishlist" style="display: flex;">
+                                        <a href=""><i class="fa fa-heart icon-gap-2"></i></a>
+                                        <a href=""><i class="fa fa-cart-arrow-down"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="p-buy">
+                                <div class="buy-now"><i style="color: green;" class="fa fa-money icon-gap"></i>
+                                    <div class="content-hide">Buy Now</div>                                
+                                </div>
+                                <div class="ques"><i style="color: red;"
+                                        class="fa fa-question-circle-o icon-gap"></i>
+                                    <div class="content-hide">Question</div>
+                                    </div>
+                            </div>
+
+                        </div>
+                        <div class="slick-container">
+                            <div class="one">
+                                <span id="labels"></span>
+                                <span id="hot"></span>
+                                <img src="./images/footwear.jpeg" alt="">
+
+                            </div>
+
+                            <div class="p-name">
+                                <p style="text-decoration: underline;">XYZ</p>
+                                <p>BRAND</p>
+                            </div>
+
+                            <div class="p-price">
+                                <h3>Headphones</h3>
+                                <p>$999.00 <del style="font-size: small;">$3,299.00</del></p>
+                                <div class="cart" style="display: flex;">
+                                    <div class="add">
+                                        <input type="number" placeholder="1">
+                                        <div class="hamburger-cart"><i style="color: white;" class="fa fa-shopping-cart"></i></div>
+                                        <button>ADD TO CART</button>
+                                    </div>
+                                    <div class="wishlist" style="display: flex;">
+                                        <a href=""><i class="fa fa-heart icon-gap-2"></i></a>
+                                        <a href=""><i class="fa fa-cart-arrow-down"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="p-buy">
+                                <div class="buy-now"><i style="color: green;" class="fa fa-money icon-gap"></i>
+                                    <div class="content-hide">Buy Now</div>
+                                </div>
+                                <div class="ques"><i style="color: red;" class="fa fa-question-circle-o icon-gap"></i>
+                                <div class="content-hide">Question</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-container">
+                            <div class="one">
+                                <span id="labels"></span>
+                                <span id="hot"></span>
+                                <img src="./images/bags.jpeg" alt="">
+
+                            </div>
+
+                            <div class="p-name">
+                                <p style="text-decoration: underline;">XYZ</p>
+                                <p>BRAND</p>
+                            </div>
+
+                            <div class="p-price">
+                                <h3>Headphones</h3>
+                                <p>$999.00 <del style="font-size: small;">$3,299.00</del></p>
+                                <div class="cart" style="display: flex;">
+                                    <div class="add">
+                                        <input type="number" placeholder="1">
+                                        <div class="hamburger-cart"><i style="color: white;" class="fa fa-shopping-cart"></i></div>
+                                        <button>ADD TO CART</button>
+                                    </div>
+                                    <div class="wishlist" style="display: flex;">
+                                        <a href=""><i class="fa fa-heart icon-gap-2"></i></a>
+                                        <a href=""><i class="fa fa-cart-arrow-down"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="p-buy">
+                                <div class="buy-now"><i style="color: green;" class="fa fa-money icon-gap"></i>
+                                    <div class="content-hide">Buy Now</div>
+                                </div>
+                                <div class="ques"><i style="color: red;"
+                                        class="fa fa-question-circle-o icon-gap"></i>
+                                    <div class="content-hide">Question</div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="slick-container">
+                            <div class="one">
+                                <span id="labels"></span>
+                                <span id="hot"></span>
+                                <img src="./images/beauty.jpeg" alt="">
+                            </div>
+
+                            <div class="p-name">
+                                <p style="text-decoration: underline;">XYZ</p>
+                                <p>BRAND</p>
+                            </div>
+
+                            <div class="p-price">
+                                <h3>Headphones</h3>
+                                <p>$999.00 <del style="font-size: small;">$3,299.00</del></p>
+                                <div class="cart" style="display: flex;">
+                                    <div class="add">
+                                        <input type="number" placeholder="1">
+                                        <div class="hamburger-cart"><i style="color: white;" class="fa fa-shopping-cart"></i></div>
+                                        <button>ADD TO CART</button>
+                                    </div>
+                                    <div class="wishlist" style="display: flex;">
+                                        <a href=""><i class="fa fa-heart icon-gap-2"></i></a>
+                                        <a href=""><i class="fa fa-cart-arrow-down"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="p-buy">
+                                <div class="buy-now"><i style="color: green;" class="fa fa-money icon-gap"></i>
+                                    <div class="content-hide">Buy Now</div>
+                                </div>
+                                <div class="ques"><i style="color: red;"
+                                        class="fa fa-question-circle-o icon-gap"></i>
+                                    <div class="content-hide">Question</div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="see-products"><button class="bg-primary in-button">SEE ALL PRODUCTS <i
+                            class="fa fa-mail-forward icon-gap"></i></button></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fifth Page  -->
+    <section style="background-color: aliceblue;">
+        <div class="wrapper">
+            <div class="fifth-page">
+                <div class="ecom-heading">
+                    <h1>Featured Category</h1>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, unde non? Assumenda similique
+                        exercitationem doloremque, quas unde commodi recusandae obcaecati officiis accusantium!</p>
+                </div>
+
+                <div class="slick" style="padding-bottom: 70px">
+                    <div class="fashion-slick">
+                        <div class="fashion-left">
+                            <div class="f-heading">
+                                <h4>Fashion</h4>
+                                <hr>
+                            </div>
+                            <div class="fashion-image"><img src="./images/bags1.jpeg" alt=""></div>
+                            <ul>
+                                <li>Accessories</li>
+                                <li>Dresses</li>
+                                <li>Pants</li>
+                                <li>T-Shirts</li>
+                                <li>See all in Fashion</li>
+                            </ul>
+                        </div>
+
+                        <div class="fashion-items fashion-slider">
+
+                            <div class="one-3">
+                                <div class="img"><img src="./images/fashion.jpeg" alt=""></div>
+                                <h3>Bodycon Dress</h3>
+                                <p>$399.00</p>
+                                <!-- <hr> -->
+                                <div class="cart" style="padding: 10px;">
+                                    <div class="add">
+                                        <input type="number" placeholder="1">
+                                        <button>ADD TO CART</button>
+                                    </div>
+                                    <div class="wishlist" style="display: flex;">
+                                        <a href=""><i class="fa fa-heart icon-gap-2"></i></a>
+                                        <a href=""><i class="fa fa-cart-arrow-down"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="one-3">
+                                <div class="img"><img src="./images/homedecor.jpeg" alt=""></div>
+                                <h3>Bodycon Dress</h3>
+                                <p>$399.00</p>
+                                <!-- <hr> -->
+                                <div class="cart" style="padding: 10px;">
+                                    <div class="add">
+                                        <input type="number" placeholder="1">
+                                        <button>ADD TO CART</button>
+                                    </div>
+                                    <div class="wishlist" style="display: flex;">
+                                        <a href=""><i class="fa fa-heart icon-gap-2"></i></a>
+                                        <a href=""><i class="fa fa-cart-arrow-down"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="one-3">
+                                <div class="img"><img src="./images/footwear.jpeg" alt=""></div>
+                                <h3>Bodycon Dress</h3>
+                                <p>$399.00</p>
+                                <!-- <hr> -->
+                                <div class="cart" style="padding: 10px;">
+                                    <div class="add">
+                                        <input type="number" placeholder="1">
+                                        <button>ADD TO CART</button>
+                                    </div>
+                                    <div class="wishlist" style="display: flex;">
+                                        <a href=""><i class="fa fa-heart icon-gap-2"></i></a>
+                                        <a href=""><i class="fa fa-cart-arrow-down"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="one-3">
+                                <div class="img"><img src="./images/bags.jpeg" alt=""></div>
+                                <h3>Bodycon Dress</h3>
+                                <p>$399.00</p>
+                                <!-- <hr> -->
+                                <div class="cart" style="padding: 10px;">
+                                    <div class="add">
+                                        <input type="number" placeholder="1">
+                                        <button>ADD TO CART</button>
+                                    </div>
+                                    <div class="wishlist" style="display: flex;">
+                                        <a href=""><i class="fa fa-heart icon-gap-2"></i></a>
+                                        <a href=""><i class="fa fa-cart-arrow-down"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="one-3">
+                                <div class="img"><img src="./images/beauty.jpeg" alt=""></div>
+                                <h3>Bodycon Dress</h3>
+                                <p>$399.00</p>
+                                <!-- <hr> -->
+                                <div class="cart" style="padding: 10px;">
+                                    <div class="add">
+                                        <input type="number" placeholder="1">
+                                        <button>ADD TO CART</button>
+                                    </div>
+                                    <div class="wishlist" style="display: flex;">
+                                        <a href=""><i class="fa fa-heart icon-gap-2"></i></a>
+                                        <a href=""><i class="fa fa-cart-arrow-down"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="one-3">
+                                <div class="img"><img src="./images/beauty.jpeg" alt=""></div>
+                                <h3>Bodycon Dress</h3>
+                                <p>$399.00</p>
+                                <!-- <hr> -->
+                                <div class="cart" style="padding: 10px;">
+                                    <div class="add">
+                                        <input type="number" placeholder="1">
+                                        <button>ADD TO CART</button>
+                                    </div>
+                                    <div class="wishlist" style="display: flex;">
+                                        <a href=""><i class="fa fa-heart icon-gap-2"></i></a>
+                                        <a href=""><i class="fa fa-cart-arrow-down"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <!-- sixth page  -->
+    <section>
+        <div class="wrapper">
+            <div class="sixth-page">
+                <div class="ecom-heading">
+                    <h1>Shop by Brand</h1>
+                    <hr>
+                </div>
+                <!-- SLICK  -->
+                <div class="slick">
+                    <div class="slick-items brand-slide">
+                        <div class="brand"><img src="./images/adidas.jpeg" alt=""></div>
+                        <div class="brand"><img src="./images/hermes.png" alt=""></div>
+                        <div class="brand"><img src="./images/prada.jpeg" alt=""></div>
+                        <div class="brand"><img src="./images/nike.jpeg" alt=""></div>
+                        <div class="brand"><img src="./images/hp.png" alt=""></div>
+                        <div class="brand"><img src="./images/adidas.jpeg" alt=""></div>
+                        <div class="brand"><img src="./images/prada.jpeg" alt=""></div>
+                        <div class="brand"><img src="./images/nike.jpeg" alt=""></div>
+                        <div class="brand"><img src="./images/hp.png" alt=""></div>
+                        <div class="brand"><img src="./images/hermes.png" alt=""></div>
+                        <div class="brand"><img src="./images/prada.jpeg" alt=""></div>
+                        <div class="brand"><img src="./images/nike.jpeg" alt=""></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seventh Page  -->
+
+    <section class="seventh-page" style="background-color: rgb(105, 105, 105);">
+        <div class="wrapper">
+            <div class="divider-2">
+                <h1>Featured Category</h1>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, unde non? Assumenda similique
+                    exercitationem doloremque, quas unde commodi recusandae obcaecati officiis accusantium!</p>
+            </div>
+            <div class="slick" style="margin-bottom: 0px;">
+                <div class="slick-items" style="padding-bottom: 40px;">
+                    <div class="two"><img src="./images/fashion.jpeg" alt=""></div>
+                    <div class="two"><img src="./images/homedecor.jpeg" alt=""></div>
+                    <div class="two"><img src="./images/footwear.jpeg" alt=""></div>
+                    <div class="two"><img src="./images/bags.jpeg" alt=""></div>
+                    <div class="two"><img src="./images/beauty.jpeg" alt=""></div>
+                    <div class="two"><img src="./images/homedecor.jpeg" alt=""></div>
+                    <div class="two"><img src="./images/footwear.jpeg" alt=""></div>
+                    <div class="two"><img src="./images/bags.jpeg" alt=""></div>
+                    <div class="two"><img src="./images/beauty.jpeg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eight Page  -->
+    <section style="background-color: aliceblue;">
+        <div class="wrapper">
+            <div class="eight-page">
+                <div class="ecom-heading">
+                    <h1>From our Blog</h1>
+                    <hr>
+                    <p>Journal comes with its own simple yet powerful blog. With the new advaned typography styles your
+                        post page design will be unmatched.</p>
+                </div>
+                <div class="items">
+                    <div class="bg-primary categories-items">LATEST POSTS</div>
+                    <div class="categories-items">MOST READ</div>
+                </div>
+                <div class="slick">
+                    <div class="slick-items" style="margin-bottom: 30px;">
+                        <div class="three">
+                            <div class="slick-image"><img src="./images/fashion5.jpg" alt=""></div>
+                            <div class="slick-text">
+                                <h3>Journal Blog is here</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vero adipisci, labore
+                                    cupiditate odio repellendus, quos deleniti libero incidunt necessitatibus,
+                                    reprehenderit praesentium ipossimus sed sapiente.</p>
+                                    <p><a href="" style="color: blue;">Read More</a></p>
+                            </div>
+                        </div>
+                        <div class="three">
+                            <div class="slick-image"><img src="./images/homedecor2.jpeg" alt=""></div>
+                            <div class="slick-text">
+                                <h3>Journal Blog is here</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vero adipisci, labore
+                                    cupiditate odio repellendus, quos deleniti libero incidunt necessitatibus,
+                                    reprehenderit praesentium ipossimus sed sapiente.</p>
+                                    <p><a href="" style="color: blue;">Read More</a></p>
+
+                            </div>
+                        </div>
+
+                        <div class="three">
+                            <div class="slick-image"><img src="./images/homedecors.jpeg" alt=""></div>
+                            <div class="slick-text">
+                                <h3>Journal Blog is here</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vero adipisci, labore
+                                    cupiditate odio repellendus, quos deleniti libero incidunt necessitatibus,
+                                    reprehenderit praesentium ipossimus sed sapiente.</p>
+                                    <p><a href="" style="color: blue;">Read More</a></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ninth Page  -->
+    <section>
+        <div class="wrapper">
+            <div class="ninth-page">
+                <div class="ecom-heading">
+                    <h1>What are people saying about us</h1>
+                    <hr>
+                </div>
+                <div class="slick">
+                    <div class="slick-items">
+                        <div class="four">
+                            <h1><i class="fa fa-quote-left"></i></h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, libero, enim maxime odio
+                                hic reiciendis dolore non repellat qui, assumenda dolorum deleniti eius quasi iusto. At
+                                unde doloremque eius.</p>
+                                <p style="text-align: center;"><a href="" style="color: blue;">-chromebandit</a></p>
+                        </div>
+                        <div class="four">
+                            <h1><i class="fa fa-quote-left"></i></h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, libero, enim maxime odio
+                                hic reiciendis dolore non repellat qui, assumenda dolorum deleniti eius quasi iusto. At
+                                unde doloremque eius.</p>
+                            <p style="text-align: center;"><a href="" style="color: blue;">-chromebandit</a></p>
+                        </div>
+                        <div class="four">
+                            <h1><i class="fa fa-quote-left"></i></h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, libero, enim maxime odio
+                                hic reiciendis dolore non repellat qui, assumenda dolorum deleniti eius quasi iusto. At
+                                unde doloremque eius.</p>
+                                <p style="text-align: center;"><a href="" style="color: blue;">-chromebandit</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- DIVIDER-3 -->
+
+    <section class="adidas-divider" style=" background-color: rgb(105, 105, 105);">
+        <div class="wrapper">
+            <div class="divider-3">
+                <div class="ecom-heading-1">
+                    <h4>MOST VIEWED</h4>
+                    <hr>
+                </div>
+
+                <div class="slick">
+                    <div class="slick-divider-items">
+                        <div class="five">
+                            <div class="slick-image">
+                                <img src="./images/adidas.jpeg" alt="">
+                            </div>
+                            <div class="price-tag">
+                                <p>Oversized Sunglasses</p>
+                                <p>$387.00</p>
+                                <p class="icon-hide"><i class="fa fa-shopping-cart icon-gap"></i><i
+                                        class="fa fa-heart-o icon-gap-2"></i><i class="fa fa-cart-arrow-down"></i></p>
+                            </div>
+                        </div>
+                        <div class="five">
+                            <div class="slick-image">
+                                <img src="./images/adidas.jpeg" alt="">
+                            </div>
+                            <div class="price-tag">
+                                <p>Headphones</p>
+                                <p style="color: red;">$999.00 <del>$3,299.00</del></p>
+                                <p class="icon-hide"><i class="fa fa-shopping-cart icon-gap"></i><i
+                                        class="fa fa-heart-o icon-gap-2"></i><i class="fa fa-cart-arrow-down"></i></p>
+
+                            </div>
+
+                        </div>
+                        <div class="five">
+                            <div class="slick-image">
+                                <img src="./images/adidas.jpeg" alt="">
+                            </div>
+                            <div class="price-tag">
+                                <p>Women's Maria Pump</p>
+                                <p>$425.00</p>
+                                <p class="icon-hide"><i class="fa fa-shopping-cart icon-gap"></i><i
+                                        class="fa fa-heart-o icon-gap-2"></i><i class="fa fa-cart-arrow-down"></i></p>
+
+                            </div>
+                        </div>
+                        <div class="five">
+                            <div class="slick-image">
+                                <img src="./images/adidas.jpeg" alt="">
+                            </div>
+                            <div class="price-tag">
+                                <p>Sport Watch Accessories</p>
+                                <p>$387.00</p>
+                                <p class="icon-hide"><i class="fa fa-shopping-cart icon-gap"></i><i
+                                        class="fa fa-heart-o icon-gap-2"></i><i class="fa fa-cart-arrow-down"></i></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tenth Page : BUTTONS-->
+
+    <section style="background-color:  rgb(240,240,240);;">
+        <div class="wrapper">
+            <div class="circle-buttons">
+                <ul>
+                    <li><i class="fa fa-facebook"></i></li>
+                    <li><i class="fa fa-twitter"></i></li>
+                    <li><i class="fa fa-skype"></i></li>
+                    <li><i class="fa fa-linkedin"></i></li>
+                    <li><i class="fa fa-instagram"></i></li>
+                    <li><i class="fa fa-youtube"></i></li>
+                    <li><i class="fa fa-google"></i></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-Head Page -->
+    <section>
+        <div class="wrapper">
+            <div class="footer-head">
+                <div class="about-us">
+                    <h3>About Us</h3>
+                    <hr>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Delivery</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                        <li><a href="">Custom Links</a></li>
+                    </ul>
+                </div>
+                <div class="about-us">
+                    <h3>Customer Service</h3>
+                    <hr>
+                    <ul>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Returns</a></li>
+                        <li><a href="">Site Map</a></li>
+                        <li><a href="">Brands</a></li>
+                        <li><a href="">Unlimited Links</a></li>
+                    </ul>
+                </div>
+                <div class="about-us">
+                    <h3>My Account</h3>
+                    <hr>
+                    <ul>
+                        <li><a href="">My Account</a></li>
+                        <li><a href="">Order History</a></li>
+                        <li><a href="">Affiliates</a></li>
+                        <li><a href="">Newsletter</a></li>
+                        <li><a href="">Gift Certificates</a></li>
+                    </ul>
+                </div>
+                <div class="about-us">
+                    <h3>Newsletter</h3>
+                    <hr>
+                    <div class="stay">Stay up to date with news and promotions by signing up for our newsletter</div>
+                    <div class="your-email">
+                        <div class="type">
+                        <input type="text" placeholder="Your email">
+                        </div>
+                        <div><button><i class="fa fa-envelope-o" style="color: white;"></i> Send</button></div>
+
+                    </div>
+                    <div class="stay"><input type="checkbox"> I have read and agree to the <a href="">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-Bottom  -->
+    <section style=" background-color: rgb(105, 105, 105);">
+        <div class="wrapper">
+            <div class="footer-bottom">
+                
+                <div class="copyright">Copyright &copy 2024, Riya Srivastava, All Rights Reserved</div>
+                <div class="payment">
+                    <div class="pay-images">
+                        <img style="margin-inline: 5px;" src="./images/stripe.png" alt="">
+                        <img style="margin-inline: 5px;" src="./images/stripe.png" alt="">
+                        <img style="margin-inline: 5px;" src="./images/stripe.png" alt="">
+                        <img style="margin-inline: 5px;" src="./images/stripe.png" alt="">
+                        <img style="margin-inline: 5px;" src="./images/stripe.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SLICK SLIDER JS  -->
+    <script type="text/javascript" src="main.js">
+    </script>
+
+</body>
+
+</html>

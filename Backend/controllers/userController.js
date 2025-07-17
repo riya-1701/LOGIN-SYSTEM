@@ -1,6 +1,7 @@
 //To secure compare passwords
 const bcrypt = require("bcrypt");
 const db = require("../config/db");
+const jwt = require("jsonwebtoken");
 
 //User Login Function
 const userLogin = (req, res) => {
@@ -39,8 +40,17 @@ const userLogin = (req, res) => {
     if (!isMatch) {
       return res.status(401).json({ meassage: "Invalid email or password" });
     }
+
+    //create JWT token: jwt.sign(..) used to create token
+    const token = jwt.sign(
+      { id: user.id, email: user.email },
+      process.env.JWT_SECRET,
+      { expiresIn: "30m" }
+    );
+
     return res.status(200).json({
       message: "Login Successful",
+      token: token,
       user: { id: user.id, email: user.email },
     });
   });
