@@ -9,7 +9,7 @@ router.post("/login", userLogin);
 //Protected Route: only accessible with token
 router.get("/dashboard", authenticateToken, (req, res) => {
   res.status(200).json({
-    message: "Welcome to the Dashboard",
+    message: "Welcome to the Dashboard!",
     user: req.user,
     //decoded token data
   });

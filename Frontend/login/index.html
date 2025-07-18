@@ -143,7 +143,7 @@
         cursor: pointer;
       }
 
-      .click {
+      .submit {
         font-size: 18px;
         background-color: rgb(98, 16, 175);
         color: white;
@@ -188,19 +188,25 @@
     </div>
     <div class="container">
       <div class="form-box">
-        <form>
+        <form id="login">
           <span class="x">
             <h1>Sign In</h1>
             <i class="bx bx-window-close" id="1"></i>
           </span>
 
-          <input class="input1" type="text" placeholder="Enter your email" />
+          <input
+            class="input1"
+            type="text"
+            placeholder="Enter your email"
+            id="email"
+          />
           <br />
 
           <input
             class="input1"
             type="password"
             placeholder="Enter your password"
+            id="password"
           />
           <br />
           <p>
@@ -208,10 +214,11 @@
             <label for="check">Remember me</label> <span>Forgot Password?</span>
           </p>
           <br />
-          <button class="click">Sign In Now</button>
+          <button class="submit">Sign In Now</button>
           <p class="signup">Not a member?<span>Signup Now</span></p>
         </form>
       </div>
     </div>
+    <script src="./login.js"></script>
   </body>
 </html>

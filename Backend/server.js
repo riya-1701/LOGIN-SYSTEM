@@ -14,6 +14,9 @@ app.get("/", (req, res) => {
   res.send("Server is working!");
 });
 
+const cors = require("cors");
+app.use(cors());
+
 // This line is required to parse JSON request body
 app.use(express.json());
 
