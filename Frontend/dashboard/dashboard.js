@@ -181,12 +181,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     return;
     //stops further execution of code
   }
-
   //sends token to backend
   try {
-    const res = await fetch("https:/localhost/3000/dashboard", {
+    const res = await fetch("http://localhost:3000/dashboard", {
       headers: {
-        Authorization: "Bearer ${token}",
+        Authorization: `Bearer ${token}`,
       },
     });
     if (!res.ok) {
@@ -197,7 +196,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     console.log("Dashboard Data:", data);
   } catch (err) {
     console.error("Error:", err);
-    alert("Session expired or unauthorized access.");
-    window.location.href = "../login/index.html";
+    alert("Session expired or unauthorized access!");
+    // window.location.href = "../login/index.html";
   }
 });

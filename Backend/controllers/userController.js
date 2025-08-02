@@ -23,7 +23,7 @@ const userLogin = (req, res) => {
     }
     if (results.length === 0) {
       console.log("User Not Found");
-      return res.status(401).json({ message: "Invalid email or password" });
+      return res.status(401).json({ message: "Invalid email or password!" });
     }
     // Results is an array that contains rows returned from the SQL query.
     //     Ex: [{ id: 1, name: 'Riya', email: 'riya@example.com', password: 'hashed_pw' }]

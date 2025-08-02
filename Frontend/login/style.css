@@ -1,0 +1,117 @@
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+  * {
+      font-family: "Poppins", sans-serif;
+  }
+
+  body {
+      background-image: url("wallpaper.webp");
+  }
+
+  .header {
+      display: flex;
+      height: 80px;
+      justify-content: space-around;
+      color: white;
+  }
+
+  .left {
+      display: flex;
+      width: 50%;
+  }
+
+  .left h1 {
+      text-align: center;
+      /* padding: 20px; */
+      margin: 16px 50px;
+  }
+
+  .right {
+      width: 50%;
+  }
+
+  /* NAVIGATOR BUTTON */
+  .right button {
+      background-color: #05050e;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+      font-size: 24px;
+      border: 3px solid white;
+      border-radius: 8px;
+      margin: 10px 360px;
+      height: 50px;
+      width: 171px;
+      color: white;
+      cursor: pointer;
+  }
+
+  .container {
+      height: 700px;
+      padding: 50px;
+  }
+
+  .form-box {
+      background-color: white;
+      height: 520px;
+      width: 450px;
+      margin: auto;
+      border-radius: 3%;
+  }
+  .x {
+      display: flex;
+      justify-content: space-between;
+      /* align-items: center; */
+      margin: 0px;
+      padding: 15px;
+  }
+
+  .x h1 {
+      font-size: 40px;
+      margin-left: 35%;
+  }
+
+  .input1 {
+      margin: 0px 5px 36px 22px;
+      border: none;
+      width: 385px;
+      padding: 10px;
+      font-size: 16px;
+      border-bottom: 2px solid rgba(128, 128, 128, 0.61);
+  }
+
+  p {
+      margin-top: 5px;
+      margin-left: 20px;
+      color: grey;
+  }
+
+  p span {
+      color: rgb(98, 16, 175);
+      margin-left: 120px;
+      cursor: pointer;
+  }
+
+  .submit {
+      font-size: 18px;
+      background-color: rgb(98, 16, 175);
+      color: white;
+      text-align: center;
+      width: 410px;
+      height: 58px;
+      border: none;
+      border-radius: 10px;
+      margin-left: 15px;
+      cursor: pointer;
+  }
+
+  .signup {
+      text-align: center;
+      margin: 25px 0px 25px 40px;
+      padding: 0px;
+  }
+
+  .signup span {
+      margin-left: 5px;
+      cursor: pointer;
+  }
