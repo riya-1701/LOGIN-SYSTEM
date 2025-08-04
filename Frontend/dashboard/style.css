@@ -447,6 +447,30 @@
   display: inline-block;
   margin-inline: 6px;
 }
+/* Logout button */
+.alltopHead .div-setbetween .logoutbtn{
+  background-color: var(--bg-primary);
+  color: white;
+  border: none;
+  margin-inline: 10px;
+  padding: 4px 6px 4px 2px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.alltopHead .div-setbetween ul li button i{
+  color: white;
+  margin-inline: 4px;
+}
+.alltopHead .div-setbetween .logoutbtn:hover {
+  background-color: var(--bg-secondary);
+  color: black;
+  border-style: solid;
+  border-color: black;
+  i{
+    color: black;
+  }
+}
 .alltopHead .div-setbetween ul li a {
   text-decoration: none;
   display: flex;

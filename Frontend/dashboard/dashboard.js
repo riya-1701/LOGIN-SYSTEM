@@ -176,7 +176,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   const token = localStorage.getItem("token");
 
   if (!token) {
-    alert("Access denied. Please log in first.");
+    // alert("Access denied. Please log in first.");
+    // If no token, redirect after 3 seconds
+    // setTimeout(() => {
+    // window.location.href = "../login/index.html";
+    // }, 3000);
     window.location.href = "../login/index.html";
     return;
     //stops further execution of code
@@ -196,7 +200,21 @@ document.addEventListener("DOMContentLoaded", async () => {
     console.log("Dashboard Data:", data);
   } catch (err) {
     console.error("Error:", err);
-    alert("Session expired or unauthorized access!");
-    // window.location.href = "../login/index.html";
+    // alert("Session expired or unauthorized access!");
+
+    //Silent Redirection to login page after 3s
+    setTimeout(() => {
+      console.log("Session expired or unauthorized access");
+    }, 300000);
+
+    // here 1s=1000ms and 3k is not working as token expiry is set to 30m
+    window.location.href = "../login/index.html";
   }
+});
+
+//Logout Functionality: Delete token from localStorage and Redirect user to login page.
+document.querySelector(".logoutbtn").addEventListener("click", () => {
+  localStorage.removeItem("token");
+  // console.log("Token removed");
+  window.location.href = "../login/index.html";
 });
