@@ -4,7 +4,6 @@ const createUserTable = () => {
   const abc = `
         CREATE TABLE IF NOT EXISTS users(
         id INT AUTO_INCREMENT PRIMARY KEY,
-        username VARCHAR(200) NOT NULL UNIQUE,
         email VARCHAR(200) NOT NULL UNIQUE,
         password VARCHAR(200) NOT NULL,
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP       

@@ -9,34 +9,33 @@
   }
 
   .header {
-    display: flex;
-        width: 100%;
-        box-sizing: border-box;
-        color: white;
-        padding: 10px 10px;
+      display: flex;
+      /* height: 80px; */
+      width:100%;
+      box-sizing: border-box;
+      color: white;
+      padding: 10px 10px;
   }
 
-   .left,
-   .right {
-       width: 50%;
-       box-sizing: border-box;
-       display: flex;
-       align-items: flex-start;
-   }
-
-   .left {
-       justify-content: flex-start;
-   }
-
-   .right {
-       justify-content: flex-end;
-   }
+  .left, .right {
+      width: 50%;
+      box-sizing: border-box;
+      display: flex;
+      align-items: flex-start;
+  }
+  .left{
+    justify-content: flex-start;
+  }
+  .right{
+    justify-content: flex-end;
+  }
 
   .left h1 {
       text-align: center;
       /* padding: 20px; */
       margin: 16px 50px;
   }
+
   /* NAVIGATOR BUTTON */
   .right button {
       background-color: #05050e;
@@ -54,12 +53,11 @@
   }
 
   .container {
-        padding: 26px 30px;
+      padding: 26px 30px;
   }
 
   .form-box {
       background-color: white;
-      /* height: 520px; */
       width: 450px;
       margin: auto;
       border-radius: 3%;

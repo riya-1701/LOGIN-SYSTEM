@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Page</title>
+    <title>Register Page</title>
     <!-- Boxicon Icons -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -22,16 +22,14 @@
         <h1>Jasmine</h1>
       </div>
       <div class="right">
-        <a href="../register/register.html">
-          <button>Sign Up</button>
-        </a>
+        <a href="../login/index.html"><button>Log In</button></a>
       </div>
     </div>
     <div class="container">
       <div class="form-box">
-        <form id="login">
+        <form id="registerForm">
           <span class="x">
-            <h1>Login</h1>
+            <h1>Signup</h1>
           </span>
 
           <input
@@ -45,24 +43,26 @@
           <input
             class="input1"
             type="password"
-            placeholder="Enter your password"
+            placeholder="Create a password"
             id="password"
           />
           <br />
-          <p>
-            <input type="checkbox" value="Remember me" id="check" />
-            <label for="check">Remember me</label> <span>Forgot Password?</span>
-          </p>
+          <input
+            class="input1"
+            type="password"
+            placeholder="Confirm your password"
+            id="confirmPassword"
+          />
           <br />
-          <button class="submit">Login</button>
+          <button class="submit">Signup</button>
           <p class="signup">
-            Don't have an account?<a href="../register/register.html"
-              ><span>Signup</span></a
+            Already have an account?<a href="../login/index.html"
+              ><span>Login</span></a
             >
           </p>
         </form>
       </div>
     </div>
-    <script src="./login.js"></script>
+    <script src="./register.js"></script>
   </body>
 </html>
