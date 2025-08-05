@@ -19,7 +19,7 @@ document
     }
 
     try {
-      const res = await fetch("http://localhost:3000/register", {
+      const res = await fetch("https://backend-vlay.onrender.com/register", {
         method: "post",
         headers: {
           "Content-Type": "application/json",
