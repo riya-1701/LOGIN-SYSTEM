@@ -187,7 +187,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
   //sends token to backend
   try {
-    const res = await fetch("http://localhost:3000/dashboard", {
+    const res = await fetch("https://backend-vlay.onrender.com/dashboard", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
