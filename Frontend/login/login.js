@@ -5,7 +5,7 @@ document.getElementById("login").addEventListener("submit", async (e) => {
   //   console.log(`Entered email: ${email} and Entered Pass: ${password}`);
 
   try {
-    const res = await fetch("http://localhost:3000/login", {
+    const res = await fetch("https://backend-vlay.onrender.com/login", {
       method: "post",
       headers: {
         "content-type": "application/json",
