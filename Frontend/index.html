@@ -3,10 +3,152 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index</title>
+    <title>Signup Success</title>
+    <!-- Boxicon Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background-image: url("wallpaper.webp");
+      }
+
+      .header {
+        display: flex;
+        /* height: 80px; */
+        width: 100%;
+        box-sizing: border-box;
+        color: white;
+        padding: 10px 10px;
+      }
+
+      .left,
+      .right {
+        width: 50%;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-start;
+      }
+      .left {
+        justify-content: flex-start;
+      }
+      .right {
+        justify-content: flex-end;
+      }
+
+      .left h1 {
+        text-align: center;
+        /* padding: 20px; */
+        margin: 16px 50px;
+      }
+
+      /* NAVIGATOR BUTTON */
+      .right button {
+        background-color: #05050e;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+        border: 3px solid white;
+        border-radius: 8px;
+        margin: 10px 0px;
+        height: 50px;
+        width: 171px;
+        color: white;
+        cursor: pointer;
+      }
+
+      .container {
+        /* height: 700px; */
+        padding: 20px;
+      }
+
+      .parentdiv {
+        background-color: white;
+        /* height: 520px; */
+        width: 450px;
+        margin: auto;
+        border-radius: 3%;
+      }
+      .div1 {
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        margin: 0px;
+        padding: 15px;
+      }
+
+      .div1 h1 {
+        font-size: 40px;
+        text-align: center;
+      }
+
+      .div2 p {
+        color: grey;
+        text-align: center;
+        padding: 0px 10px;
+      }
+      /* .div3 {
+        padding: 20px;
+      } */
+      .submit {
+        font-size: 18px;
+        background-color: rgb(98, 16, 175);
+        color: white;
+        text-align: center;
+        width: 370px;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        margin: 0px 40px;
+        cursor: pointer;
+      }
+    </style>
   </head>
+
   <body>
-    <a href="./login/index.html">Login</a><br />
-    <a href="./register/register.html">Register</a><br />
+    <div class="header">
+      <div class="left">
+        <h1>Jessicca</h1>
+      </div>
+      <div class="right">
+        <a href="../login/index.html">
+          <button>Welcome</button>
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="parentdiv">
+        <div class="div1">
+          <h1>Welcome to Jasmine Store!</h1>
+        </div>
+        <div class="div3">
+          <!-- <a href="../login/index.html" class="submit">Continue</a> -->
+          <a href="./login/index.html"><button class="submit">Login</button></a>
+        </div>
+        <div class="div2">
+          <p>OR</p>
+        </div>
+        <div class="div3">
+          <!-- <a href="../login/index.html" class="submit">Continue</a> -->
+          <a href="./register/register.html"
+            ><button class="submit" style="margin-bottom: 70px">
+              Sign Up
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
   </body>
 </html>
